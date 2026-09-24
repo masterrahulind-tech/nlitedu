@@ -1320,7 +1320,7 @@ const EnrollmentPageContent = () => {
                   {courses
                     .filter((c) => {
                       if (isInternship) {
-                        return true; // Show all courses for internship
+                        return c.program_type === "Internship";
                       } else {
                         return c.program_type === "Foundation" || c.program_type === "Trending";
                       }
