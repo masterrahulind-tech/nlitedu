@@ -1,3 +1,63 @@
+<div align="center">
+
+  <a href="https://saveragraphics.com" target="_blank">
+    <img src="https://res.cloudinary.com/dc1iz0gui/image/upload/f_auto,q_auto,w_300/savera_graphics/static/savera-logo.png" alt="Savera Graphics Logo" width="160" />
+  </a>
+
+  <br />
+
+  <p><strong>Developed & Engineered by</strong></p>
+
+  # [SAVERA GRAPHICS](https://saveragraphics.com)
+
+  ### *We Build Brands.*
+  **High-Impact Branding • IT & AI Solutions • Digital Creatives**
+
+  <br />
+
+  <!-- Live Badges -->
+  <a href="https://saveragraphics.online" target="_blank">
+    <img src="https://img.shields.io/badge/Online-saveragraphics.online-ea580c?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Online Domain" />
+  </a>
+  &nbsp;
+  <a href="https://saveragraphics.com" target="_blank">
+    <img src="https://img.shields.io/badge/Portal-saveragraphics.com-e11d48?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Com Domain" />
+  </a>
+  &nbsp;
+  <a href="https://saveragraphics.info" target="_blank">
+    <img src="https://img.shields.io/badge/Info-saveragraphics.info-d97706?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Info Domain" />
+  </a>
+
+</div>
+
+---
+
+### 🚀 About This Platform
+
+This project is designed, deployed, and maintained by **Savera Graphics** — delivering tailored brand experiences, performant web applications, and intelligent cloud systems.
+
+* **Agency:** Savera Graphics Studio
+* **Core Focus:** Web Development, Cloud Infrastructure, AI Integrations & Modern UI/UX
+* **Base:** Design District, India
+
+---
+
+### 📬 Get in Touch for Development & Design
+
+Need a web application, digital transformation, or custom branding for your business?
+
+| Reach Out | Contact Details |
+| :--- | :--- |
+| **Email** | [info@saveragraphics.com](mailto:info@saveragraphics.com) |
+| **Direct Call / WhatsApp** | [+91 72248 46206](tel:+917224846206) |
+| **Office Location** | 📍 Savera Graphics Studio, Design District, India |
+| **Official Portals** | [saveragraphics.com](https://saveragraphics.com) &bull; [saveragraphics.online](https://saveragraphics.online) &bull; [saveragraphics.info](https://saveragraphics.info) |
+
+---
+
+<div align="center">
+  <sub>Handcrafted with precision by <strong>Savera Graphics</strong> &bull; © 2026 All rights reserved.</sub>
+</div>
 # Startup - Free Next.js Startup Website Template
 
 Startup is a free, open-source, and premium-quality [**Next.js startup website template**](https://nextjstemplates.com/templates/startup) that comes with everything you need to launch a startup, business, or SaaS website, including all essential sections, components, and pages.

@@ -230,10 +230,17 @@ const EnrollmentPageContent = () => {
       };
     }
 
-    let found = courses.find((item) => item.title === form.course);
-    if (!found) {
-      found = courses.find((item) => item.slug === courseSlug);
-    }
+    // Internship page pe pehle Internship type dhundo, phir any type
+let found;
+if (programParam === "internship") {
+  found = courses.find((item) => item.title === form.course && item.program_type === "Internship");
+}
+if (!found) {
+  found = courses.find((item) => item.title === form.course);
+}
+if (!found) {
+  found = courses.find((item) => item.slug === courseSlug);
+}
 
     if (!found) return defaultCourse;
 
@@ -461,10 +468,11 @@ const EnrollmentPageContent = () => {
   };
 
   const isInternship = useMemo(() => {
+    if (programParam === "internship") return true;
     if (course?.program_type) {
       return course.program_type === "Internship";
     }
-    return programParam === "internship" || courseSlug === "general" || !course?.govt_price;
+    return courseSlug === "general" || !course?.govt_price;
   }, [programParam, courseSlug, course]);
 
   // Determine fee based on college type and course
@@ -577,12 +585,22 @@ const EnrollmentPageContent = () => {
     setForm((prev) => ({ ...prev, [name]: value }));
 
     if (name === "course") {
-      const selected = courses.find((c) => c.title === value);
+      const isCurrentlyInternship = searchParams.get("program") === "internship" || searchParams.get("course") === "general";
+      let selected;
+      if (isCurrentlyInternship) {
+        selected = courses.find((c) => c.title === value && c.program_type === "Internship");
+      }
+      if (!selected) {
+        selected = courses.find((c) => c.title === value);
+      }
+
       if (typeof window !== "undefined") {
         const params = new URLSearchParams(window.location.search);
         if (selected) {
           params.set("course", selected.slug);
-          if (selected.program_type) {
+          if (isCurrentlyInternship) {
+            params.set("program", "internship");
+          } else if (selected.program_type) {
             params.set("program", selected.program_type.toLowerCase());
           }
         } else {
