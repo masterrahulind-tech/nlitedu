@@ -230,10 +230,17 @@ const EnrollmentPageContent = () => {
       };
     }
 
-    let found = courses.find((item) => item.title === form.course);
-    if (!found) {
-      found = courses.find((item) => item.slug === courseSlug);
-    }
+    // Internship page pe pehle Internship type dhundo, phir any type
+let found;
+if (programParam === "internship") {
+  found = courses.find((item) => item.title === form.course && item.program_type === "Internship");
+}
+if (!found) {
+  found = courses.find((item) => item.title === form.course);
+}
+if (!found) {
+  found = courses.find((item) => item.slug === courseSlug);
+}
 
     if (!found) return defaultCourse;
 
